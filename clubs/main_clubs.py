@@ -1,5 +1,3 @@
-
-
 def main_clubs():
     print("""
 [ 1 ] - Jogadores
