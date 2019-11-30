@@ -1,8 +1,10 @@
 
+
+
 def main_clubs():
     print("""
-[ 1 ] - Clubes
-[ 2 ] - Jogadores
+[ 1 ] - Jogadores
+[ 2 ] - Clubes
 [ 3 ] - Técnicos
 [ 0 ] - Voltar
     """)
@@ -14,4 +16,5 @@ def main_clubs():
 [ 2 ] - Alterar clube
 [ 0 ] - Voltar
     """)
-    menu = input("Digite uma opção: ")
+        menu = input("Digite uma opção: ")
+        
