@@ -1,5 +1,5 @@
 
-def main():
+def main_clubs():
     print("""
 [ 1 ] - Clubes
 [ 2 ] - Jogadores
@@ -15,4 +15,3 @@ def main():
 [ 0 ] - Voltar
     """)
     menu = input("Digite uma opção: ")
-    
