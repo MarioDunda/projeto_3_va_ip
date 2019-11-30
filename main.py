@@ -1,3 +1,4 @@
+from clubs.main_clubs import *
 
 def main():
     print("""
