@@ -74,3 +74,12 @@ class club:
                 self.line = f'#{self.count}; {self.name}; {self.city}; {self.foundationYear}; {self.mascot}; {self.president}; {self.colors}; {self.manager}; {self.playersId}\n'
                 self.file.write(self.line)
         
+    def showClubs(self):
+        self.file = open('clubes.txt', 'r')
+        self.lines = self.file.readlines()
+        for self.line in self.lines:
+            self.line.split(';')
+            print(self.line)
+
+club = club()
+club.showClubs()
