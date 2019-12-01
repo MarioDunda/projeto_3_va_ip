@@ -17,9 +17,22 @@ class club:
             self.count += 1
 
         self.file = open('clubes.txt', 'a')
-        self.line = f'#{self.count}; {self.name}; {self.city}; {self.foundationYear}; {self.mascot}, {self.president}; {self.colors}; {self.manager}; {self.playersId} \n'
+        self.line = f'#{self.count}; {self.name}; {self.city}; {self.foundationYear}; {self.mascot}; {self.president}; {self.colors}; {self.manager}; {self.playersId}\n'
         self.file.write(self.line)
 
+    def deleteClubByID(self):
+
+        self.clubID = input('Digite o id do clube que deseja deletar [#num]:')
+        self.file = open('clubes.txt', 'r')
+        self.lines = self.file.readlines()
+        self.file = open('clubes.txt', 'w')
+    
+        for self.line in  self.lines:
+            
+            if self.clubID not in self.line.strip('\n'):
+                self.file.writelines(self.line)
+            
 club = club()
 club.createClub()
+club.deleteClubByID()
 
