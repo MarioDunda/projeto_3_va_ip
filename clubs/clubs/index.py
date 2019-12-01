@@ -31,8 +31,22 @@ class club:
             
             if self.clubID not in self.line.strip('\n'):
                 self.file.writelines(self.line)
+
+    def deleteClubByName(self):
+
+        self.clubName = input('Digite o nome do clube que deseja deletar: ')
+        self.file = open('clubes.txt', 'r')
+        self.lines = self.file.readlines()
+        self.file = open('clubes.txt', 'w')
+
+        for self.line in self.lines:
+
+            if self.clubName not in self.line.strip('\n'):
+                self.file.writelines(self.line)
+
             
 club = club()
-club.createClub()
-club.deleteClubByID()
+# club.createClub()
+# club.createClub()
+# club.deleteClubByName()
 
