@@ -5,7 +5,7 @@ class player:
         count = 0
         for i in arq:
             count += 1
-        return count
+        return count + 1
 
     def creatPlayer(self):
         r = 'S'
@@ -23,7 +23,7 @@ class player:
                     self.force = input(
                         'Digite a força (baixa, média, forte): ')
                     self.file = open('player.txt', 'a')
-                    self.line = f'#{self.countId() + 1}; {self.name}; {self.birthdate}; {self.wheight}; {self.height}; {self.position}; {self.force}\n'
+                    self.line = f'#{self.countId()}; {self.name}; {self.birthdate}; {self.wheight}; {self.height}; {self.position}; {self.force}\n'
                     self.file.write(self.line)
                     self.file.close()
             else:
