@@ -1,3 +1,6 @@
+from clubs.club.club import *
+
+
 def main_clubs():
     print("""
 [ 1 ] - Jogadores
@@ -47,14 +50,25 @@ Digite uma opção valida
 def main_club():
     print("""
 [ 1 ] - Cadastrar novo clube
-[ 2 ] - Alterar clube
+[ 2 ] - Deletar clube
 [ 0 ] - Voltar
     """)
     menu = input("Digite uma opção: ")
     if(menu == "1"):
-        print("cadastrar")
+        class_club.createClub()
     elif(menu == "2"):
-        print("alterar")
+        print("""
+
+[ 1 ] - Deletar por ID
+[ 2 ] - Deletar por nome
+[ 0 ] - Voltar
+
+    """)
+        opcao = input("Digite uma opção: ")
+        if(opcao == "1"):
+            class_club.deleteClubByID()
+        elif(opcao == "2"):
+            class_club.deleteClubByName()
     elif(menu == "0"):
         main_clubs()
     else:

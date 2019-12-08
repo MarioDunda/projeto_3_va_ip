@@ -1,4 +1,4 @@
-from clubs.main_clubs import *
+from main_clubs import main_clubs
 
 def main():
     print("""
@@ -9,7 +9,7 @@ def main():
     menu = input("Digite uma opção: ")
 
     if(menu == "1"):
-        print("clubes")
+        main_clubs()
     elif(menu == "2"):
         print("campeonato")
     elif(menu == "0"):
