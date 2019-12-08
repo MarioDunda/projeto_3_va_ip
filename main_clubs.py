@@ -1,4 +1,6 @@
 from clubs.club.club import *
+from clubs.players.index import *
+from clubs.managers.index import *
 
 
 def main_clubs():
@@ -28,14 +30,14 @@ Digite uma opção valida
 def main_player():
     print("""
 [ 1 ] - Cadastrar novo jogador
-[ 2 ] - Alterar jogador
+[ 2 ] - Deletar jogador
 [ 0 ] - Voltar
     """)
     menu = input("Digite uma opção: ")
     if(menu == "1"):
-        print("cadastrar")
+        player.createPlayer()
     elif(menu == "2"):
-        print("alterar")
+        player.deletePlayerID()
     elif(menu == "0"):
         main_clubs()
     else:
@@ -88,7 +90,7 @@ def main_manager():
     """)
     menu = input("Digite uma opção: ")
     if(menu == "1"):
-        print("cadastrar")
+        manager.creatManager()
     elif(menu == "2"):
         print("alterar")
     elif(menu == "0"):

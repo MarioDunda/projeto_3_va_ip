@@ -1,5 +1,4 @@
 class player:
-
     def countId(self):
         arq = open('player.txt')
         count = 0
@@ -7,25 +6,25 @@ class player:
             count += 1
         return count + 1
 
-    def creatPlayer(self):
+    def createPlayer(self=0):
         r = 'S'
         while r == 'S':
             quantityPlayers = int(
                 input('Quantos jogadores você deseja cadastrar? '))
             if quantityPlayers <= (6):
                 for i in range(quantityPlayers):
-                    self.name = input('\nDigite o nome do jogador: ')
-                    self.birthdate = input(
+                    name = input('\nDigite o nome do jogador: ')
+                    birthdate = input(
                         'Digite a data de nascimento no formato [dia/mês/ano]: ')
-                    self.wheight = input('Digite o peso: ')
-                    self.height = input('Digite a altura: ')
-                    self.position = input('Digite a posição: ')
-                    self.force = input(
+                    wheight = input('Digite o peso: ')
+                    height = input('Digite a altura: ')
+                    position = input('Digite a posição: ')
+                    force = input(
                         'Digite a força (baixa, média, forte): ')
-                    self.file = open('player.txt', 'a')
-                    self.line = f'#{self.countId()}; {self.name}; {self.birthdate}; {self.wheight}; {self.height}; {self.position}; {self.force}\n'
-                    self.file.write(self.line)
-                    self.file.close()
+                    file = open('player.txt', 'a')
+                    line = f'#{countId()}; {name}; {birthdate}; {wheight}; {height}; {position}; {force}\n'
+                    file.write(line)
+                    file.close()
             else:
                 print(
                     'Você só pode cadastrar até 6 jogadores. Por favor tente novamente')
@@ -35,20 +34,14 @@ class player:
                 print('Cadastro Cancelado')
                 break
 
-
-    def deletePlayerID(self):
-        self.playerName = input(
+    def deletePlayerID(self=0):
+        playerName = input(
             'Digite o id do jogador que deseja deletar [#num]:')
-        self.file = open('player.txt', 'r')
-        self.lines = self.file.readlines()
-        self.file = open('player.txt', 'w')
+        file = open('player.txt', 'r')
+        lines = file.readlines()
+        file = open('player.txt', 'w')
 
-        for self.line in self.lines:
+        for line in lines:
 
-            if self.playerID not in self.line.strip('\n'):
-                self.file.writelines(self.line)
-
-
-player = player()
-player.creatPlayer()
-# player.deletePlayerID()
+            if playerID not in line.strip('\n'):
+                file.writelines(line)

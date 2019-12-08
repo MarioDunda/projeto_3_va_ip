@@ -18,6 +18,7 @@ class class_club():
         file = open('clubes.txt', 'a')
         line = f'#{count}; {name}; {city}; {foundationYear}; {mascot}; {president}; {colors}; {manager}; {playersId}\n'
         file.write(line)
+        print("Clube criado")
 
     def deleteClubByID(self=0):
 
@@ -31,6 +32,7 @@ class class_club():
 
             if clubID not in line.strip('\n'):
                 file.writelines(line)
+        print("Clube deletado")
 
     def deleteClubByName(self=0):
 
@@ -44,6 +46,7 @@ class class_club():
 
             if clubName not in line.strip('\n'):
                 file.writelines(line)
+        print("Clube deletado")
 
     def updateClubByName(self=0):
         clubName = input(
@@ -77,12 +80,11 @@ class class_club():
                 file = open('clubes.txt', 'a')
                 line = f'#{count}; {name}; {city}; {foundationYear}; {mascot}; {president}; {colors}; {manager}; {playersId}\n'
                 file.write(line)
+        print("Clube alterado")
 
-    def showClubs(self):
-        self.file = open('clubes.txt', 'r')
-        self.lines = self.file.readlines()
-        for self.line in self.lines:
-            self.line.split(';')
-            print(self.line)
-
-    club = property(createClub)
+    def showClubs(self=0):
+        file = open('clubes.txt', 'r')
+        lines = file.readlines()
+        for line in lines:
+            line.split(';')
+            print(line)
