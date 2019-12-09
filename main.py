@@ -11,7 +11,8 @@ def main():
         from main_clubs import main_clubs
         main_clubs()
     elif(menu == "2"):
-        print("campeonato")
+        from main_champ import main_champ
+        main_champ()
     elif(menu == "0"):
         print('exit')
     else:
