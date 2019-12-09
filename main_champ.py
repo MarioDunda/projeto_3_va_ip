@@ -1,3 +1,6 @@
+from championschip.simulation.index import simulation
+simulation = simulation()
+
 def main_champ():
     print("""
 [ 1 ] - Simular campeonato
@@ -6,9 +9,11 @@ def main_champ():
     """)
     menu = input("Digite uma opção: ")
     if(menu == "1"):
-        print("simular")
+        simulation.games()
+        main_champ()
     elif(menu == "2"):
-        print("tabela")
+        simulation.ranking()
+        main_champ()
     elif(menu == "0"):
         print("exit")
     else:

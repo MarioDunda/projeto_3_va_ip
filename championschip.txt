@@ -1,8 +1,32 @@
-('#1', ' Mario', {'3'})
-('#1', ' Mario', {'0'})
-('#2', ' mghgjk', {'0'})
-('#2', ' mghgjk', {'3'})
-('#1', ' Mario', {'3'})
-('#1', ' Mario', {'0'})
-('#2', ' mghgjk', {'0'})
-('#2', ' mghgjk', {'0'})
+#3,  Alisson
+#1,  joao
+#2,  Samuel
+#0,  mario
+#0,  mario
+#2,  Samuel
+#1,  joao
+#3,  Alisson
+#3,  Alisson
+#2,  Samuel
+#1,  joao
+#0,  mario
+#0,  mario
+#1,  joao
+#3,  Alisson
+#2,  Samuel
+#2,  Samuel
+#0,  mario
+#1,  joao
+#3,  Alisson
+#3,  Alisson
+#2,  Samuel
+#0,  mario
+#1,  joao
+#3,  Alisson
+#0,  mario
+#1,  joao
+#2,  Samuel
+#2,  Samuel
+#1,  joao
+#3,  Alisson
+#0,  mario
