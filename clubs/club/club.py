@@ -1,5 +1,5 @@
 class class_club():
-    def createClub(self=0):
+    def createClub(self):
         name = str(input('Digite o nome do clube: '))
         city = input('Digite o local do clube: ')
         foundationYear = input('Digite o ano de fundação do clube: ')
@@ -20,7 +20,7 @@ class class_club():
         file.write(line)
         print("Clube criado")
 
-    def deleteClubByID(self=0):
+    def deleteClubByID(self):
 
         clubID = input(
             'Digite o id do clube que deseja deletar [#num]:')
@@ -34,7 +34,7 @@ class class_club():
                 file.writelines(line)
         print("Clube deletado")
 
-    def deleteClubByName(self=0):
+    def deleteClubByName(self):
 
         clubName = input(
             'Digite o nome do clube que deseja deletar: ')
@@ -48,7 +48,7 @@ class class_club():
                 file.writelines(line)
         print("Clube deletado")
 
-    def updateClubByName(self=0):
+    def updateClubByName(self):
         clubName = input(
             'Digite o nome do clube que desaja atualizar')
         file = open('clubes.txt', 'r')
@@ -82,7 +82,7 @@ class class_club():
                 file.write(line)
         print("Clube alterado")
 
-    def showClubs(self=0):
+    def showClubs(self):
         file = open('clubes.txt', 'r')
         lines = file.readlines()
         for line in lines:

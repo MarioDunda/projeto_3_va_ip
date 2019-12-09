@@ -6,7 +6,7 @@ class player:
             count += 1
         return count + 1
 
-    def createPlayer(self=0):
+    def createPlayer(self):
         r = 'S'
         while r == 'S':
             quantityPlayers = int(
@@ -22,7 +22,7 @@ class player:
                     force = input(
                         'Digite a força (baixa, média, forte): ')
                     file = open('player.txt', 'a')
-                    line = f'#{countId()}; {name}; {birthdate}; {wheight}; {height}; {position}; {force}\n'
+                    line = f'#{self.countId()}; {name}; {birthdate}; {wheight}; {height}; {position}; {force}\n'
                     file.write(line)
                     file.close()
             else:
@@ -34,7 +34,7 @@ class player:
                 print('Cadastro Cancelado')
                 break
 
-    def deletePlayerID(self=0):
+    def deletePlayerID(self):
         playerName = input(
             'Digite o id do jogador que deseja deletar [#num]:')
         file = open('player.txt', 'r')

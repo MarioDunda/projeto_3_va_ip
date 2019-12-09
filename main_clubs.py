@@ -1,6 +1,9 @@
 from clubs.club.club import *
 from clubs.players.index import *
 from clubs.managers.index import *
+class_club = class_club()
+player = player()
+manager = manager()
 
 
 def main_clubs():
@@ -17,7 +20,9 @@ def main_clubs():
     elif(menu == "2"):
         main_club()
     elif(menu == "3"):
-        main_manager
+        main_manager()
+    elif(menu == "0"):
+        print("exit")
     else:
         print("""
 

@@ -1,5 +1,5 @@
 class manager:
-    def creatManager(self=0):
+    def creatManager(self):
         name = input('Digite o nome do técnico: ')
         arq  = open('maneger.txt','r')
  
