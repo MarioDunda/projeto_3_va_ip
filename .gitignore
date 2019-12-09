@@ -1,2 +1,6 @@
 
 player.txt
+clubes.txt
+clubs/club/__pycache__/club.cpython-37.pyc
+*.pyc
+*.pyc
