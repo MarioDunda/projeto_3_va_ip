@@ -22,7 +22,8 @@ def main_clubs():
     elif(menu == "3"):
         main_manager()
     elif(menu == "0"):
-        print("exit")
+        from main import main
+        main()
     else:
         print("""
 
@@ -115,5 +116,3 @@ Digite uma opção valida
         """)
         main_clubs()
 
-
-main_clubs()

@@ -14,3 +14,6 @@
 #14; mario; ; ; ; ; 
 #15; samuel; ; ; ; ; 
 #16; mario; ; ; ; ; 
+#17; mario; ; ; ; ; 
+#18; mario; ; ; ; ; 
+#19; mario; ; ; ; ; 

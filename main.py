@@ -1,3 +1,5 @@
+from main_champ import main_champ
+from main_clubs import main_clubs
 
 def main():
     print("""
@@ -8,10 +10,8 @@ def main():
     menu = input("Digite uma opção: ")
 
     if(menu == "1"):
-        from main_clubs import main_clubs
         main_clubs()
     elif(menu == "2"):
-        from main_champ import main_champ
         main_champ()
     elif(menu == "0"):
         print('exit')

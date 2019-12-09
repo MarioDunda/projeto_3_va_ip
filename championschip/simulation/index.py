@@ -1,3 +1,4 @@
+from random import choice
 
 class simulation:
     def games(self):
@@ -11,7 +12,6 @@ class simulation:
         file = open("championschip.txt", "a")
         for i in dic:
             for jogo in range(2):
-                from random import choice
                 resultado = choice('03')
                 line = f'{i, dic[i][1], {resultado}}\n'
                 file.write(line)
