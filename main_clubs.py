@@ -41,8 +41,10 @@ def main_player():
     menu = input("Digite uma opção: ")
     if(menu == "1"):
         player.createPlayer()
+        main_clubs()
     elif(menu == "2"):
         player.deletePlayerID()
+        main_clubs()
     elif(menu == "0"):
         main_clubs()
     else:
@@ -63,6 +65,7 @@ def main_club():
     menu = input("Digite uma opção: ")
     if(menu == "1"):
         class_club.createClub()
+        main_clubs()
     elif(menu == "2"):
         print("""
 
@@ -74,8 +77,10 @@ def main_club():
         opcao = input("Digite uma opção: ")
         if(opcao == "1"):
             class_club.deleteClubByID()
+            main_clubs()
         elif(opcao == "2"):
             class_club.deleteClubByName()
+            main_clubs()
     elif(menu == "0"):
         main_clubs()
     else:
@@ -96,8 +101,10 @@ def main_manager():
     menu = input("Digite uma opção: ")
     if(menu == "1"):
         manager.creatManager()
+        main_clubs()
     elif(menu == "2"):
         print("alterar")
+        main_clubs()
     elif(menu == "0"):
         main_clubs()
     else:
